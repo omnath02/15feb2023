@@ -37,9 +37,12 @@ WebDriver driver= new ChromeDriver();
 		search.sendKeys("mobile");
 
 		Thread.sleep(2000);
+	   
 		
 		WebElement searchButton=driver.findElement(By.xpath("//input[@type='submit']"));
 		searchButton.click();
+	
+	Thread.sleep(1000);
 
 
 	//	WebElement firstResult=driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]"));
