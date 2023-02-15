@@ -43,6 +43,8 @@ WebDriver driver= new ChromeDriver();
 		searchButton.click();
 	
 	Thread.sleep(1000);
+	
+	Thread.sleep(1000);
 
 
 	//	WebElement firstResult=driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]"));
