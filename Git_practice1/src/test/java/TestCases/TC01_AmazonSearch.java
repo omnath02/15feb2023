@@ -36,7 +36,8 @@ WebDriver driver= new ChromeDriver();
 		WebElement search=driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		search.sendKeys("mobile");
 
-
+		Thread.sleep(2000);
+		
 		WebElement searchButton=driver.findElement(By.xpath("//input[@type='submit']"));
 		searchButton.click();
 
