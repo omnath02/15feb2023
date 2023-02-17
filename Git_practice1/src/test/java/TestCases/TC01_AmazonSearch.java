@@ -25,7 +25,7 @@ WebDriver driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.amazon.in/");
 
-
+//asdsfsdccdsfd
 
 
 		Thread.sleep(2000);
