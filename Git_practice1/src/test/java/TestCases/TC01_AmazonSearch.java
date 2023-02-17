@@ -1,21 +1,19 @@
 package TestCases;
 
-import java.util.ArrayList;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
+
 
 public class TC01_AmazonSearch {
 public static void main(String[] args) throws InterruptedException {
 		
 
-System.setProperty("webdriver.chrome.driver","C:\\Users\\USER\\Downloads\\Velocity\\Selenium\\drivers\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Downloads\\softwere testing\\automation\\selenium\\chromedriver_win32\\chromedriver.exe");
 		
 WebDriver driver= new ChromeDriver();
 		
@@ -27,10 +25,12 @@ WebDriver driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.amazon.in/");
 
-
+//asdsfsdccdsfd
 
 
 		Thread.sleep(2000);
+	
+	
 
 
 		WebElement search=driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
@@ -45,7 +45,6 @@ WebDriver driver= new ChromeDriver();
 	Thread.sleep(1000);
 	
 	Thread.sleep(1000);
-
 
 	//	WebElement firstResult=driver.findElement(By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[1]"));
 	//	firstResult.click();
